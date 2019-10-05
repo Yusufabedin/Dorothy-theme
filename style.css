@@ -1,0 +1,468 @@
+/*
+Theme Name:  mydorothy 
+Theme URI: https://wordpress.org/themes/twentynineteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain:  lovem
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Twenty Nineteen is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+}
+
+.banner {
+    background: url(assets/image/banner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 525px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-item p {
+    line-height: 31px;
+    font-size: 27px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    max-width: 455px;
+}
+
+.banner-item h3 {
+    font-family: 'Allura', cursive;
+    font-size: 35px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+header {
+    height: 123px;
+}
+
+.hdr_inner {
+    width: 100%;
+    position: relative;
+}
+
+.hdr_inner::after,
+.hdr_inner::before {
+    display: block;
+    content: "";
+}
+
+.hdr_inner::after {
+    clear: both
+}
+
+.logo-img {
+    display: inline;
+    width: 20%;
+    float: left;
+    height: 123px;
+    position: relative;
+}
+
+.logo-img img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    padding: 12px 5px;
+    text-decoration: : none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 15.49px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #800020;
+}
+
+.author {
+    background: url(assets/image/flower_bannaer.png) no-repeat;
+    width: 100%;
+    height: 804px;
+    background-size: 100%;
+    padding-bottom: 98px;
+    padding-top: 98px;
+    background-color: #f7f7fa;
+}
+
+.author_text {
+    padding: 129px;
+}
+
+.author_text h1 {
+    font-size: 106px;
+    line-height: 78px;
+    font-family: 'Allura', cursive;
+    align-items: center;
+    ;
+}
+
+.author_text span {
+    color: #800020;
+}
+
+.author_text p {
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Poppins', sans-serif;
+    color: #797979;
+}
+
+.author_text a {
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 16px 0;
+    display: block;
+    font-size: 18px;
+    color: #800020;
+    transition: .3s all;
+    margin-top: 29px;
+    width: 230px;
+    text-align: center;
+}
+
+.author_text a:hover {
+    color: white;
+    background-color: #800020;
+    /*transition: .5s;*/
+}
+
+.Contemporary h2 {
+    text-align: center;
+    font-family: 'Allura', cursive;
+    margin-top: 70px;
+    font-size: 70px;
+}
+
+.linebar {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.book img {
+    border: 2px solid #000;
+    background: black;
+}
+
+.book a {
+    display: block;
+    text-decoration: none;
+    color: #8d8d8d;
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+.book span {
+    color: #8d8d8d;
+    text-transform: uppercase;
+    font-size: 19.88px;
+    line-height: 23px;
+    font-family: 'Lato', sans-serif;
+}
+
+.book i {
+    margin-left: 11px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+section.link {
+    text-align: center;
+    padding: 30px 0px;
+    margin: 0px;
+    background: #da483f;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #da483f), color-stop(70%, #890723));
+    background: linear-gradient(180deg, #da483f 13%, #890723 70%);
+}
+
+section.link button {
+    height: 65px;
+    background: none;
+    width: 455px;
+    border: 1px solid white;
+    border-radius: 35px;
+}
+
+section.link button a {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2.3125em;
+    text-decoration: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+section.slider {
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    background: #dddfdc;
+    margin: 0px;
+    padding: 30px 0px;
+}
+
+section.slider h2 {
+    font-family: 'Allura', cursive;
+    font-size: 70px;
+}
+
+section.slider .box {
+    background: none;
+}
+
+section.slider .box .heading {
+    margin: 30px 0px;
+}
+
+section.slider .box p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #797979;
+}
+
+section.slider .box h3 {
+    font-size: 22.01px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+section.slider .box hr {
+    display: none;
+}
+
+.owl-carousel {
+    margin: 25px 0;
+}
+
+.avatar {
+    margin: auto;
+    border-radius: 50%;
+    max-width: 96px;
+}
+
+.owl-carousel .owl-item img {
+    width: 16%;
+    border-radius: 0px;
+}
+
+.box {
+    background-color: #fff;
+    color: #4a4a4a;
+    display: block;
+    border: 1px solid;
+    padding-bottom: 19px;
+    padding-right: 19px;
+    padding-left: 19px;
+    padding-left: 19px;
+}
+
+#customers-testimonials .box {
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .box {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    background: url("assets/image/left.png") no-repeat;
+    background-position: left;
+    height: 20px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    background: url("assets/image/right.png") no-repeat;
+    height: 20px;
+    background-position: right;
+    margin-top: -25px;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: block;
+    margin-top: -227px;
+    position: relative;
+    z-index: 99;
+}
+
+footer.footer {
+    background: #000000;
+    padding-bottom: 32px;
+    padding-top: 47px;
+    font-size: 1.125em;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+footer.footer .icon {
+    padding-bottom: 38px;
+    padding-top: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 16%;
+    margin: 0 auto;
+}
+
+footer.footer .icon a {
+    font-size: 1.5em;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid;
+    height: 45px;
+    width: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+footer.footer .icon a:hover {
+    background: white;
+    color: black;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+    text-decoration: none;
+}
+
+footer.footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+footer.footer ul {
+    list-style: none;
+}
+
+footer.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer.footer ul li img {
+    margin: 0px 30px;
+}
+li.menu-item::after {
+      font-family: "Font Awesome 5 brands"; 
+      font-weight: 900; 
+      content: "\f785";
+      padding: 0 6px;
+}
+
+
+/**
+responsive
+**/
+
+@media only screen and (max-width: 1200px) {
+    .banner-item img {
+        margin-left: 23px;
+        padding-bottom: 11px;
+    }
+    .banner-item p {
+        margin-left: 24px;
+        margin-top: 13px;
+    }
+    .banner-item h3 {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .menu ul li a {
+        font-size: 17px;
+    }
+    .logo-img {
+        width: 20%;
+    }
+    .author_text h1 {
+        font-size: 91px;
+        line-height: 52px;
+    }
+    section.slider {
+        height: 670px;
+    }
+}
